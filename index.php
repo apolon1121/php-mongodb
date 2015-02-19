@@ -1,9 +1,9 @@
 <?php
   
    $connectToMongoDB = new MongoClient();
-   $MongoDatabase = $connectToMongoDB->myblogspots;
+   $MongoDatabase = $connectToMongoDB->myblogspots; //Connect to Database Like mysql_select_db
    
-   $collection = $MongoDatabase->createCollection("blogposts");
+   $collection = $MongoDatabase->createCollection("blogposts"); //collection is something like table in mysql
    
    
    /*Insert Into MongoDB*/
